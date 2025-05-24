@@ -1,8 +1,6 @@
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-//https://www.npmjs.com/package/axios - for add axios
 import axios from 'axios';
-//https://www.npmjs.com/package/react-router-dom - for add routings
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 import Navbar from './layout/Navbar';
@@ -13,7 +11,7 @@ import ViewUser from './users/ViewUser';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: '#f8f9fa', minHeight: '100vh'}}>
       <Router>
         <Navbar/>
         <Routes>
